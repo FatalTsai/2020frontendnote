@@ -1,0 +1,13 @@
+text-color1{
+    color: #f4a142;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-bgcolor1{
+    background-color: #a30d44;
+}
+
+.vh100{
+    height: 100vh
+ }
