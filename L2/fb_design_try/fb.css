@@ -1,0 +1,22 @@
+.vw100 {
+    width: 100vw; }
+  
+  .vh100 {
+    height: calc(100vh - 50px); }
+  
+  .h-50p {
+    height: 50px; }
+  
+  .nav {
+    width: 100vw;
+    height: 50px; }
+  
+  .fb-color1 {
+    background-color: #3b5998; }
+  
+  .fb-color2 {
+    background-color: #8b9dc3; }
+  
+  .fb-color3 {
+    background-color: #dfe3ee; }
+  

@@ -1,0 +1,17 @@
+body {
+  background-color: #11171d; }
+
+nav {
+  height: 50px;
+  background-color: #1b2837; }
+
+.container {
+  width: 1020px; }
+
+article {
+  background-color: #15202b;
+  min-height: 100vh; }
+
+aside {
+  min-height: 50vh;
+  background-color: #14202a; }
