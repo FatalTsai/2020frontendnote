@@ -1,0 +1,145 @@
+
+
+.bg1{
+    background-color: #202023;
+}
+.bg2{
+    background-color: #212123;
+}
+.bg3{
+    background: url(https://dq.yam.com/img/bg/bgnoise_lg.png) repeat;
+}
+.shadow{
+    box-shadow: 0 20px 30px -20px rgba(0,0,0,0.3);
+
+}
+.bgleft{
+    background-color: #222;
+    
+}
+.left-display{
+    display: flex;
+    flex-direction: column;
+}
+.oval{
+    position: relative;
+    background: #222;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #fff;
+    text-shadow: none;
+    height: 25px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+.text-87{
+    color: #878787;
+}
+.text-87:hover{
+    color: cornsilk;
+}
+.text-leave{
+    color: #61c2f0;
+}
+.hz-30{
+    height: 30px;
+}
+.hz-50
+{
+    height: 50px;
+}
+.hz-82{
+    height: 82px;
+}
+.hz-250{
+    height: 250px;
+}
+.mh-100{
+    min-height: 100px;
+}
+.mh-500{
+    min-height: 500px;
+}
+.fz-24{
+    font-size: 24px;
+}
+b.fz-20{
+    font-size: 20px;
+}
+.fz-14{
+    font-size: 14px;
+}
+
+.border1{
+
+    border-bottom: 1px solid #dcdcdc;
+
+}
+
+
+.border2{
+
+    border-bottom: 1px solid #383838;
+
+}
+
+.img-header{
+    background-image: url(https://images.pexels.com/photos/158780/leaf-nature-green-spring-158780.jpeg?cs=srgb&dl=pexels-158780.jpg&fm=jpg);
+}
+.img-cover{
+    background-size: cover;  
+}
+.img-center{
+    background-position: center center;
+}
+.box{
+    margin-bottom: 2px;
+    background-size: cover;
+}
+.img1{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img2{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img3{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img4{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img5{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img6{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img7{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img8{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img9{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img10{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img11{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+.icon1{
+    background-image: url(https://dq.yam.com/img/logo/logoIco.png);
+}
+.card-img-top{
+    height: 146px;
+    width: 220px;
+    object-fit: cover;
+
+}
