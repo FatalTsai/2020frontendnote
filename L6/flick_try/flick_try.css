@@ -1,0 +1,99 @@
+
+
+.bg1{
+    background-color: #202023;
+}
+.bg2{
+    background-color: #212123;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-87{
+    color: #878787;
+}
+.text-87:hover{
+    color: cornsilk;
+}
+.hz-50
+{
+    height: 50px;
+}
+.hz-250{
+    height: 250px;
+}
+.mh-100{
+    min-height: 100px;
+}
+.mh-500{
+    min-height: 500px;
+}
+.fz-24{
+    font-size: 24px;
+}
+.fz-20{
+    font-size: 20px;
+}
+.fz-14{
+    font-size: 14px;
+}
+
+.border1{
+
+    border-bottom: 1px solid #dcdcdc;
+
+}
+
+
+.border2{
+
+    border-bottom: 1px solid #383838;
+
+}
+
+.img-header{
+    background-image: url(https://images.pexels.com/photos/158780/leaf-nature-green-spring-158780.jpeg?cs=srgb&dl=pexels-158780.jpg&fm=jpg);
+}
+.img-cover{
+    background-size: cover;  
+}
+.img-center{
+    background-position: center center;
+}
+.box{
+    margin-bottom: 2px;
+    background-size: cover;
+}
+.img1{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img2{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img3{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img4{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img5{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img6{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img7{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img8{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img9{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img10{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img11{
+    background-image: url(https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
