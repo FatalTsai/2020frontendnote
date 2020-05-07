@@ -1,0 +1,15 @@
+function moveTo(name){
+	$('.navMobile').hide();
+	var offset = $( name ).offset();
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+	$body.animate({
+		scrollTop: offset.top
+	}, 600);
+}
+
+$('.nav-link').each(function(index, el) {
+	$(this).click(function(event) {
+		var id = $(this).attr('href');
+		moveTo(id);
+	});
+});

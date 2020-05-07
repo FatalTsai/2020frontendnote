@@ -1,0 +1,10 @@
+#navbar-example2{
+	width: 200px;
+}
+
+#content2{
+	position: relative;
+	height: 50vh;
+	overflow-y: scroll;
+	margin-left: 210px;
+}
