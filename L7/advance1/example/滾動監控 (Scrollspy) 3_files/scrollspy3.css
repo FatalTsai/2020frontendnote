@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,900');
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+}
+nav{
+	height: 100vh;
+}
+.nav-mine .nav-link{
+	width: 20px;
+	height: 20px;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 50%;
+	padding: 0;
+}
+.nav-mine .active{
+	border-radius: 50%;
+	background-color: rgba(0,0,0,1);
+	width: 20px;
+	height: 20px;
+	padding: 0;
+}
+.nav-mine li{
+	position: relative;
+}
+.nav-mine li:hover::before {
+  position: absolute;
+  font-size: 10px;
+  padding: 4px;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  right: 30px;
+  bottom: -2px;
+  min-width: 110px;
+  text-align: center;
+  border-radius: 5px;
+}
+.nav-mine li:nth-child(1):hover::before {
+  content: "寂靜的長廊";
+}
+.nav-mine li:nth-child(2):hover::before {
+  content: "上課前的寧靜";
+}
+.nav-mine li:nth-child(3):hover::before {
+  content: "認真上課的老師";
+}
+.nav-mine li:nth-child(4):hover::before {
+  content: "振筆疾書";
+}
+.nav-mine li:nth-child(5):hover::before {
+  content: "空無一人的放課後";
+}
+.nav-mine li:nth-child(6):hover::before {
+  content: "被遺忘的文具";
+}
+
+article{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+.article1{
+	background-image: url(https://images.pexels.com/photos/373488/pexels-photo-373488.jpeg);
+}
+.article2{
+	background-image: url(https://images.pexels.com/photos/289740/pexels-photo-289740.jpeg);
+}
+.article3{
+	background-image: url(https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg);
+}
+.article4{
+	background-image: url(https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg);
+}
+.article5{
+	background-image: url(https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg);
+}
+.article6{
+	background-image: url(https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg);
+}
+.article-title{
+	position: absolute;
+	font-size: 100px;
+	color: rgba(255,255,255,0.7);
+	right: 100px;
+	bottom: 100px;
+	opacity: 0;
+	transition: all 1s;
+	transition-delay: 1s;
+}
+.article-title-active{
+	opacity: 1;
+	transition: all 1s;
+}
+
+footer{
+	background-color: #000;
+	text-align: center;
+	font-size: 10px;
+	color: #40454f;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+footer a{
+	color: #40454f;
+}
