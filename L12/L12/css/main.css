@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Oswald:wght@400;600&display=swap");
+.test {
+  height: 40px;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Oswald", "Noto Sans TC", sans-serif;
+  background-color: pink;
+  margin: 10px;
+}
+.all{
+	position: relative;
+	width: 900px;
+	height: 632px;
+	/*outline: 1px solid red;*/
+	margin-left: 100px;
+}
+.all .bg1{
+	position: absolute;
+	background-image: url(../images/bg4.png);
+	width: 688px;
+	height: 632px;
+	background-size: cover;
+}
+.all .back{
+	position: absolute;
+	margin-left: 160px;
+	margin-top: 85px;
+  	-webkit-mask-image: url("../images/BG.png");
+  	mask-image: url("../images/BG.png");
+	width: 552px;
+	height: 414px;
+}
+.all .back .bg{
+	position: absolute;
+	background-image: url(../images/BG.png);
+	width: 552px;
+	height: 414px;
+}
+.all .back .leaf1{
+	position: absolute;
+	background-image: url(../images/leaf1.png);
+	width: 183px;
+	height: 124px;
+	margin-left: 26px;
+	margin-top: -4px;
+}
+.all .back .leaf2{
+	position: absolute;
+	background-image: url(../images/leaf2.png);
+	width: 135px;
+	height: 110px;
+	margin-left: -20px;
+	margin-top: 107px;
+}
+.all .back .leaf3{
+	position: absolute;
+	background-image: url(../images/leaf3.png);
+	width: 99px;
+	height: 141px;
+	margin-top: 175px;
+	margin-left: -20px;
+}
+.all .back .leaf4{
+	position: absolute;
+	background-image: url(../images/leaf4.png);
+	width: 73px;
+	height: 75px;
+	margin-top: 220px;
+}
+.all .back .leaf5{
+	position: absolute;
+	background-image: url(../images/leaf5.png);
+	width: 50px;
+	height: 39px;
+	margin-left: 338px;
+}
+.all .back .leaf6{
+	position: absolute;
+	background-image: url(../images/leaf6.png);
+	width: 93px;
+	height: 79px;
+	margin-left: 400px;
+	margin-top: 3px;
+}
+.all .back .leaf7{
+	position: absolute;
+	background-image: url(../images/leaf7.png);
+	width: 137px;
+	height: 108px;
+	margin-left: 447px;
+	margin-top: 25px;
+}
+.all .back .leaf8{
+	position: absolute;
+	background-image: url(../images/leaf8.png);
+	width: 53px;
+	height: 84px;
+	margin-left: 500px;
+	margin-top: 120px;
+}
+.all .back .monkey3{
+	position: absolute;
+	background-image: url(../images/lemur_blue.png);
+	width: 143px;
+	height: 339px;
+	transform-origin: top center;
+	transform: scaleX(-1) rotate(90deg);
+	margin-left: 205px;
+	margin-top: -60px;
+}
+.all .back .flower{
+	position: absolute;
+	background-image: url(../images/flower.png);
+	width: 91px;
+	height: 98px;
+	margin-top: 270px;
+	margin-left: 16px;
+}
+.all .back .torchL{
+	position: absolute;
+	background-image: url(../images/torch.png);
+	width: 35px;
+	height: 93px;
+	margin-left: 22px;
+	margin-top: 230px;
+
+}
+.all .back .torchR{
+	position: absolute;
+	background-image: url(../images/torch.png);
+	width: 35px;
+	height: 93px;
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+	margin-left: 500px;
+	margin-top: 230px;
+}
+.all .back .fireL{
+	position: absolute;
+	background-image: url(../images/fire/fire1.png);
+	width: 100px;
+	height: 112px;
+	margin-top: 130px;
+	margin-left: -10px;
+	animation-name: fire1;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: step-start;
+}
+.all .back .fireR{
+	position: absolute;
+	background-image: url(../images/fire/fire1.png);
+	width: 100px;
+	height: 112px;
+	margin-left: 460px;
+	margin-top: 130px;
+	animation-name: fire1;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: step-start;
+}
+
+.all .front{
+	opacity: 1;
+	position: absolute;
+	margin-left: 152px;
+	margin-top: 350px;
+	width: 608px;
+	height: 247px;
+}
+.all .front .piles_fruit{
+	opacity: 1;
+	position: absolute;
+	background-image: url(../images/piles_fruit.png);
+	width: 608px;
+	height: 247px;
+}
+.all .front .grapes{
+	position: absolute;
+	background-image: url(../images/grapes.png);
+	width: 67px;
+	height: 66px;
+	margin-left: 320px;
+	margin-top: 170px;
+}
+.all .front .coconet{
+	position: absolute;
+	background-image: url(../images/coconet.png);
+	width: 98px;
+	height: 91px;
+	margin-left: 230px;
+	margin-top: 160px;
+}
+.all .front .pineapple{
+	position: absolute;
+	background-image: url(../images/pineapple.png);
+	width: 100px;
+	height: 123px;
+	margin-left: 140px;
+	margin-top: 134px;
+}
+.all .front .banana1{
+	position: absolute;
+	background-image: url(../images/banana1.png);
+	width: 123px;
+	height: 96px;
+	margin-left: 52px;
+	margin-top: 150px;
+}
+.all .front .banana2{
+	position: absolute;
+	background-image: url(../images/banana2.png);
+	width: 92px;
+	height: 82px;
+	margin-left: 430px;
+	margin-top: 160px;
+}
+.all .front .blueberry{
+	position: absolute;
+	background-image: url(../images/blueberry.png);
+	width: 101px;
+	height: 122px;
+	margin-top: 108px;
+	margin-left: 6px;
+}
+.all .front .starfruit{
+	position: absolute;
+	background-image: url(../images/starfruit.png);
+	width: 87px;
+	height: 97px;
+	margin-top: 18px;
+	margin-left: 464px;
+}
+.all .front .monkey1{
+	position: absolute;
+	background-image: url(../images/lemur_stand.png);
+	width: 283px;
+	height: 342px;
+	margin-left: 140px;
+	margin-top: -144px;
+	/*display: none;*/
+}
+.all .front .coin{
+	position: absolute;
+	background-image: url(../images/coin/coin1.png);
+	width: 75px;
+	height: 75px;
+	opacity: 1;
+}
+.all .monkey2{
+	position: absolute;
+	background-image: url(../images/lemur.png);
+	width: 252px;
+	height: 515px;
+	margin-left: 324px;
+	margin-top: -45px;
+	/*display: none;*/
+}
+.all .vines{
+	position: absolute;
+	background-image: url(../images/VINES.png);
+	width: 615px;
+	height: 449px;
+	margin-left: 115px;
+	margin-top: 65px;
+}
+.all .temple{
+	position: absolute;
+	background-image: url(../images/temple.png);
+	width: 292px;
+	height: 385px;
+	margin-left: 280px;
+	margin-top: 150px;
+}
+.leaf_l{
+	position: absolute;
+	margin-left: 60px;
+	margin-top: 354px;
+}
+.leaf_r{
+	position: absolute;
+	margin-left: 620px;
+	margin-top: 354px;
+}
+
+
+@keyframes fire1 {
+	0%{
+			background-image: url(../images/fire/fire1.png);
+
+	}
+	16.6%{
+			background-image: url(../images/fire/fire2.png);
+
+	}
+	33.2%{
+			background-image: url(../images/fire/fire3.png);
+
+	}
+	49.8%{
+			background-image: url(../images/fire/fire4.png);
+
+	}
+	66.4%{
+			background-image: url(../images/fire/fire5.png);
+
+	}
+	83%{
+			background-image: url(../images/fire/fire6.png);
+
+	}
+	100%{
+			background-image: url(../images/fire/fire1.png);
+
+	}
+
+}
+
+
+
+@keyframes coin2 {
+	0%{
+			background-image: url(../images/fire/fire1.png);
+
+	}
+	16.6%{
+			background-image: url(../images/fire/fire2.png);
+
+	}
+	33.2%{
+			background-image: url(../images/fire/fire3.png);
+
+	}
+	49.8%{
+			background-image: url(../images/fire/fire4.png);
+
+	}
+	66.4%{
+			background-image: url(../images/fire/fire5.png);
+
+	}
+	83%{
+			background-image: url(../images/fire/fire6.png);
+
+	}
+	100%{
+			background-image: url(../images/fire/fire1.png);
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

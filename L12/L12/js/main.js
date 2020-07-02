@@ -1,0 +1,138 @@
+$(document).ready(()=> {
+	/*TweenMax.to(".back",2,{
+		x:100,
+		y:100,
+		//repeat :4
+		onComplete:aaa,
+		onCompleteParams:['.coin6']
+	});*/
+	/*
+	let path = [{x:0, y:0}, {x:100, y:-200}, {x:0, y:0}];
+	TweenMax.to('.coin1',1,{
+		bezier :{type:"soft", values:path}
+
+	})*/
+	init()
+});
+
+
+let init=()=>{
+	$('.monkey1').hide()
+	$('.monkey2').hide()
+
+	TweenMax.to('.leaf1',0,{x:-100, y:-100});
+	TweenMax.to('.leaf2',0,{x:-100, y:-50});
+	TweenMax.to('.leaf3',0,{x:-100, y:0});
+	TweenMax.to('.leaf4',0,{x:-100, y:50});
+	TweenMax.to('.torchL',0,{x:-100, y:100});
+	TweenMax.to('.fireL',0,{x:-100, y:100});
+	TweenMax.to('.flower',0,{x:-100, y:140});
+	TweenMax.to('.leaf5',0,{x:0, y:-100});
+	TweenMax.to('.leaf6',0,{x:50, y:-100});
+	TweenMax.to('.leaf7',0,{x:100, y:-100});
+	TweenMax.to('.leaf8',0,{x:100, y:50});
+	TweenMax.to('.torchR',0,{x:100, y:100});
+	TweenMax.to('.fireR',0,{x:100, y:100});
+
+	TweenMax.to('.grapes',0,{scale:0})
+	TweenMax.to('.coconet',0,{scale:0})
+	TweenMax.to('.pineapple',0,{scale:0})
+	TweenMax.to('.banana1',0,{scale:0})
+	TweenMax.to('.banana2',0,{scale:0})
+	TweenMax.to('.blueberry',0,{scale:0})
+	TweenMax.to('.starfruit',0,{scale:0})
+
+	TweenMax.to('.leaf_l',0,{scale:0,transformOrigin:"250% 100%"})
+	TweenMax.to('.leaf_r',0,{scale:0,transformOrigin:"-100% 100%"})
+	TweenMax.to('.back',0,{scale:0,transformOrigin:"320% 500%"})
+	TweenMax.to('.front',0,{scale:0,transformOrigin:"320% 250%"})
+	TweenMax.to('.temple',0,{scale:0,transformOrigin:"180% 450%"})
+	TweenMax.to('.vines',0,{scale:0,transformOrigin:"360% 520%"})
+
+	setTimeout(()=>{
+		scene0_1();
+	},1000)
+
+	let scene0_1 = ()=>{
+		TweenMax.to('.leaf_l',1,{scale:1,transformOrigin:"250% 100%"})
+		TweenMax.to('.leaf_r',1,{scale:1,transformOrigin:"-100% 100%"})
+		TweenMax.to('.back',1,{
+			scale:1,transformOrigin:"320% 500%",
+			ease:Back.easeout
+		})
+		TweenMax.to('.front',1,{scale:1,transformOrigin:"320% 250%"})
+		TweenMax.to('.temple',1,{scale:1,delay:0.2,transformOrigin:"180% 450%"})
+		TweenMax.to('.vines',1,{scale:1,delay:0.1,transformOrigin:"360% 520%"})
+		setTimeout(()=>{
+			scene0_2()
+		},800)
+		setTimeout(()=>{
+			scene0_3()
+		},1000)
+	}
+
+	let scene0_2 =()=>{
+		let runtime =1;
+		TweenMax.to('.leaf1',runtime,{x:-0, y:-0,ease:Back.easeout});
+		TweenMax.to('.leaf2',runtime,{x:-0, y:-0,ease:Back.easeout});
+		TweenMax.to('.leaf3',runtime,{x:-0, y:0,ease:Back.easeout});
+		TweenMax.to('.leaf4',runtime,{x:-0, y:50,ease:Back.easeout});
+		TweenMax.to('.torchL',runtime,{x:-0, y:0,ease:Back.easeout});
+		TweenMax.to('.fireL',runtime,{x:-0, y:0,ease:Back.easeout});
+		TweenMax.to('.flower',runtime,{x:-0, y:0,ease:Back.easeout});
+		TweenMax.to('.leaf5',runtime,{x:0, y:-0,ease:Back.easeout});
+		TweenMax.to('.leaf6',runtime,{x:0, y:-0,ease:Back.easeout});
+		TweenMax.to('.leaf7',runtime,{x:0, y:-0,ease:Back.easeout});
+		TweenMax.to('.leaf8',runtime,{x:0, y:0,ease:Back.easeout});
+		TweenMax.to('.torchR',runtime,{x:0, y:0,ease:Back.easeout});
+		TweenMax.to('.fireR',runtime,{x:0, y:0,ease:Back.easeout});
+		}
+
+	let scene0_3 =()=>{
+		let runtime =1;
+		TweenMax.to('.grapes',runtime,{scale:1,ease:Back.easeout})
+		TweenMax.to('.coconet',runtime,{scale:1,ease:Back.easeout})
+		TweenMax.to('.pineapple',runtime,{scale:1,ease:Back.easeout})
+		TweenMax.to('.pineapple',runtime,{scale:1,ease:Back.easeout})
+		TweenMax.to('.banana1',runtime,{scale:1,ease:Back.easeout})
+		TweenMax.to('.banana2',runtime,{scale:1,ease:Back.easeout})
+		TweenMax.to('.blueberry',runtime,{scale:1,ease:Back.easeout})
+		TweenMax.to('.starfruit',runtime,{scale:1,ease:Back.easeout})
+		scene1_1()
+	}
+
+
+	let scene1_1=()=>{
+		$(".monkey1").show()
+		TweenMax.to('.monkey1',0,{y:200,opacity:0})
+		TweenMax.to(".monkey1",1,{y:0,opacity:1,ease:Back.easeInOut});
+		setTimeout(()=>{
+			scene1_2()
+		},1200)
+	}
+
+	let scene1_2=()=>{
+	let path=[{x:0,y:0},{x:100,y:-500},{x:200,y:0}]
+	TweenMax.to('.coin5',1,{
+		repeat:1,
+		bezier:{type:"soft",values:path},
+		onCompleteParams:['.coin6'],
+		onComplete:onCoinOut
+
+	})
+
+	let path2=[{x:0,y:0},{x:-100,y:-500},{x:200,y:0}]
+	TweenMax.to('.coin6',1,{
+		repeat:1,
+		bezier:{type:"soft",values:path2},
+		onCompleteParams:['.coin6'],
+		onComplete:onCoinOut
+	})
+
+	}
+
+	let onCoinOut =(mc)=>{
+		console.log("fucking fucked coin")
+		TweenMax.to(mc,0,{x:0,y:0,opacity:0})
+	}
+}

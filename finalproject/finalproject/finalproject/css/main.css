@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Oswald:wght@400;600&display=swap");
+.test {
+  height: 40px;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Oswald", "Noto Sans TC", sans-serif;
+  background-color: pink;
+  margin: 10px;
+}
+form{
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background :rgb(37, 125, 37,0.8)
+}
+.bg-l{
+  background: url("AAW3H3YGWRBOTJ6OWY65HA3A4M.jpg") repeat;
+
+}
+.icon1{
+  width: 8vh;
+  height: 8vh;
+  background: url(http://ddragon.leagueoflegends.com/cdn/10.12.1/img/profileicon/588.png) ;
+  object-fit: auto;
+
+}
+.bg1{
+  background-color: #202023;
+}
+.bg2{
+  background-color: #212123;
+}
+.bg3{
+  background: url(https://dq.yam.com/img/bg/bgnoise_lg.png) repeat;
+}
+.bgf2{
+  background-color: #F3F2EE;
+}
+
+.bgnew{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyMjcyQzAwQTc1QzUxMUUyQTQxNkUxOEMwRkFFRDJENSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyMjcyQzAwQjc1QzUxMUUyQTQxNkUxOEMwRkFFRDJENSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjIyNzJDMDA4NzVDNTExRTJBNDE2RTE4QzBGQUVEMkQ1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIyNzJDMDA5NzVDNTExRTJBNDE2RTE4QzBGQUVEMkQ1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ppiPgwAACHFJREFUeNrEmAtw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);
+}
+.bgaa{
+  background-color: #aaa;
+}
+.bg80{
+  background: rgba(17,17,17,0.8);
+
+}
+
+.bgfb{
+  background :rgba(66,103,178,0.7) !important
+}
+.bggreen{
+  background: rgba(0,187,37,0.7);
+}
+.shadow{
+  box-shadow: 0 20px 30px -20px rgba(0,0,0,0.3);
+
+}
+.shadow2{
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+
+}
+.bgleft{
+  background-color: #222;
+  
+}
+.left-display{
+  display: flex;
+  flex-direction: column;
+}
+.oval{
+  position: relative;
+  
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-size: 15px;
+  color: #fff;
+  text-shadow: none;
+  height: 25px;
+}
+.text-yellow{
+  color: #cee500  ;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+.text-aa{
+  color: #aaa;
+}
+.text-aa:hover{
+  color: #fff;
+  font-size: large;
+}
+.text-cc{
+  color: #ccc;
+}
+.text-87{
+  color: #878787;
+}
+.text-87:hover{
+  color: cornsilk;
+}
+.text-leave{
+  color: #61c2f0;
+}
+.hz-30{
+  height: 30px;
+}
+.hz-50
+{
+  height: 50px;
+}
+.hz-56{
+  height: 56px;
+}
+.hz-66{
+  height: 66px;
+}
+.hz-82{
+  height: 82px;
+}
+.hz-250{
+  height: 250px;
+}
+.hz-240{
+  height: 240px;
+}
+.hz-500{
+  height: 500px;
+}
+.wz-50{
+  width: 50px;
+}
+.mh-100{
+  min-height: 100px;
+}
+.mh-500{
+  min-height: 500px;
+}
+
+.fz-9{
+  font-size: 9px;
+}
+.fz-24{
+  font-size: 24px;
+}
+.fz-20{
+  font-size: 20px;
+}
+.fz-12{
+  font-size: 12px;
+}
+.fz-14{
+  font-size: 14px;
+}
+.fz-17{
+  font-size: 17px;
+}
+.fz-30{
+  font-size: 30px;
+}
+.fz-50{
+  font-size: 50px;
+}
+.border1{
+
+  border-bottom: 1px solid #dcdcdc;
+
+}
+
+
+.border2{
+
+  border-bottom: 1px solid #383838;
+
+}
+.doubleborder{
+  border-top: 1px solid #E2E2DF;
+  border-bottom: 1px solid #E2E2DF;
+}
+
+.img-header{
+  background-image: url(https://images.pexels.com/photos/158780/leaf-nature-green-spring-158780.jpeg?cs=srgb&dl=pexels-158780.jpg&fm=jpg);
+}
+.img-cover{
+  background-size: cover;  
+}
+.img-center{
+  background-position: center center;
+}
+.box{
+  margin-bottom: 2px;
+  background-size: cover;
+}
+
+.card-img-top{
+  height: 146px;
+  width: 220px;
+  object-fit: cover;
+
+}
+.card{
+  width: 60vw;
+  height: 10vh;
+  background-color: rgba(0,0,0,.7);
+    box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    border-radius: 8px;
+}
+
+.card-body{
+  position: relative;
+}
+.newpost{
+  top: -5px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 35px;
+  height: 35px;
+}
+
+.paper
+
+{
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: 0 3px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+  color: #666;
+  line-height: 1.2em;
+  text-shadow: 0 2px 1px #fff;
+}
+
+.yamlogo {
+  background: url(https://dq.yam.com/img/logo/yam_logo.png) no-repeat left top;
+  width: 15px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+.item{
+
+}
+
+.mx-300{
+  margin-right: 300px;
+  margin-left: 300px;
+}
+.lazyImg{
+  width: 100%;
+}

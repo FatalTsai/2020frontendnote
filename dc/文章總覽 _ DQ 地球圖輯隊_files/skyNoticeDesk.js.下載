@@ -1,0 +1,151 @@
+/**
+ * 訂閱 web 通知 #skyNoticeDesk
+ * html 已有 DOM, 但內容隱藏
+ * 函式依 section 紀錄 / 是否支援功能判斷運行...
+ * 依使用者權限，顯示提示內容 .active
+ * 點擊 bar 任何按鈕後，移除整個 DOM
+ */
+(function(skyNoticeDeskCorrectionTop) {
+  var sessionSkyNotice = window.sessionStorage.getItem("skyNotice");
+  var $skyNoticeDesk = $("#skyNoticeDesk");
+
+  if (!("Notification" in window) || sessionSkyNotice === "close") {
+    return;
+  } else if (Notification.permission === "default") {
+    // 顯示提示：通知功能
+    $skyNoticeDesk.show();
+    $skyNoticeDesk.find(".toOlder").addClass("active");
+  } else if (Notification.permission === "granted") {
+    // 隱藏提示
+    $skyNoticeDesk.hide();
+    yNF_Class.AutoRegist = false;
+    yNF_Class.init();
+  } else if (Notification.permission === "denied") {
+    // 顯示提示：開放權限教學
+    $skyNoticeDesk.show();
+    $skyNoticeDesk.find(".toUnlock").addClass("active");
+  }
+
+  // 校正選單列
+
+  skyNoticeDeskCorrectionTop($("#header"), 0);
+  skyNoticeDeskCorrectionTop($("#mainContent .infoBox"), 0);
+  skyNoticeDeskCorrectionTop($("#sns-desk"), 0);
+
+  // 允許通知 btn
+  $skyNoticeDesk.find(".toOlder .action").on("click", function(e) {
+    // 詢問匡
+    Notification.requestPermission(function(permission) {
+      if (Notification.permission === "granted") {
+        // 執行通知
+        yNF_Class.init();
+      }
+      $skyNoticeDesk.remove();
+      // 校正
+      skyNoticeDeskCorrectionTop($("#header"));
+      skyNoticeDeskCorrectionTop($("#mainContent .infoBox"));
+      skyNoticeDeskCorrectionTop($("#sns-desk"));
+    });
+  });
+
+  // console.log("video");
+  // $("#skyNoticeUnlockAnim video").on("onemptied", function(e) {
+  //   console.log("emptied", e);
+  // });
+  // var vv = document.querySelector(".video");
+  // var qvv = $("#skyNoticeUnlockAnim video");
+  // console.log("vv", vv, "qvv", qvv);
+  // vv.addEventListener("emptied", event => {
+  //   console.log("Uh oh. The media is empty. Did you call load()?");
+  // });
+
+  // 解鎖動畫 btn
+  $skyNoticeDesk.find(".toUnlock .action").on("click", function() {
+    // 塞入 video
+    var videoDom =
+      '<video class="videoUnlock" width="100%" height="470" controls="controls" loop="loop" muted="muted">';
+    videoDom +=
+      '<source src="https://img.yamedia.tw/2019/dq/20191126/dqunlock.mp4" type="video/mp4"></video>';
+    $("#skyNoticeUnlockAnim .container").html(videoDom);
+    // 跳出教學動畫
+    $("#skyNoticeUnlockAnim").show();
+    $("#skyNoticeUnlockAnim video")
+      .get(0)
+      .play();
+  });
+
+  // 提示關閉 btn
+  $skyNoticeDesk.find(".btn-close").on("click", function(e) {
+    $skyNoticeDesk.remove();
+    window.sessionStorage.setItem("skyNotice", "close");
+    console.log("close");
+    // 校正
+    skyNoticeDeskCorrectionTop($("#header"));
+    skyNoticeDeskCorrectionTop($("#mainContent .infoBox"));
+    skyNoticeDeskCorrectionTop($("#sns-desk"));
+  });
+
+  // 動畫關閉 btn
+  $("#skyNoticeUnlockAnim .btn-close").on("click", function(e) {
+    $("#skyNoticeUnlockAnim video")
+      .get(0)
+      .pause();
+    $("#skyNoticeUnlockAnim").hide();
+  });
+})(skyNoticeDeskCorrectionTop);
+
+/**
+ * 校正因 #skyNoticeDesk 塞入改變的 top 定位: infoBox / sns-desk / 選單列
+ * 使用 js 判斷依 scroll 狀況改變定位...
+ * */
+(function(waitForFinalEvent, skyNoticeDeskCorrectionTop) {
+  var $header = $("#header");
+  var $infoBox = $("#mainContent .infoBox");
+  var $snsGroup = $("#sns-desk");
+  var scA = window.scrollY;
+
+  // 校正
+  skyNoticeDeskCorrectionTop($header, scA);
+  skyNoticeDeskCorrectionTop($infoBox, scA);
+  skyNoticeDeskCorrectionTop($snsGroup, scA);
+
+  $(window).on("scroll", function(e) {
+    var scB = window.scrollY;
+
+    // waitForFinalEvent(function() { // 捲動觸發優化 --------------
+
+    // 校正
+    skyNoticeDeskCorrectionTop($header, scB);
+    skyNoticeDeskCorrectionTop($infoBox, scB);
+    skyNoticeDeskCorrectionTop($snsGroup, scB);
+
+    scA = scB;
+    // }, 80); // /捲動觸發優化 --------------
+  });
+})(waitForFinalEvent, skyNoticeDeskCorrectionTop);
+
+/**
+ * 校正位置整合成 function
+ */
+function skyNoticeDeskCorrectionTop(el, scrollB) {
+  if (el.length <= 0) return;
+  var $mySkyNotice = $("#skyNoticeDesk");
+
+  if (scrollB !== undefined && $mySkyNotice.length > 0) {
+    // console.log("scrollB", scrollB, $mySkyNotice.length > 0);
+
+    if (scrollB <= $mySkyNotice.height()) {
+      var myOffset = $mySkyNotice.height() - scrollB;
+      if (myOffset >= $mySkyNotice.height()) {
+        myOffset = $mySkyNotice.height();
+      }
+      el.css({
+        top: myOffset + "px"
+      });
+    } else if (scrollB >= $mySkyNotice.height()) {
+      el.removeAttr("style");
+    }
+  } else {
+    el.removeAttr("style");
+  }
+}

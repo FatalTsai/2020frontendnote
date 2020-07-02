@@ -1,0 +1,38 @@
+article{
+    /*長寬占滿整個螢幕*/
+    width: 100vw;
+    height: 100vh;
+    position: relative;/*相對於其他元素定位*/
+    background-size: cover;
+    background-position:center center;
+}
+
+.article1{
+	background-image: url(https://images.pexels.com/photos/373488/pexels-photo-373488.jpeg);
+}
+.article2{
+	background-image: url(https://images.pexels.com/photos/289740/pexels-photo-289740.jpeg);
+}
+.article3{
+	background-image: url(https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg);
+}
+.article4{
+	background-image: url(https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg);
+}
+.article5{
+	background-image: url(https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg);
+}
+.article6{
+	background-image: url(https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg);
+}
+
+footer{
+	background-color: #000;
+	text-align: center;
+	font-size: 10px;
+	color: #40454f;
+
+}
+footer a{
+	color: #40454f;
+}

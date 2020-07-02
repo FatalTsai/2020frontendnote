@@ -1,0 +1,127 @@
+﻿var yNF_Class = new function () {
+    var messaging = null;
+    var config = {
+        apiKey: "AIzaSyDt2ciQbrbHRaiFSYY7anSlEwoF_2uG2OE",
+        authDomain: location.hostname,
+        databaseURL: "https://yam-notification.firebaseio.com",
+        projectId: "yam-notification",
+        storageBucket: "yam-notification.appspot.com",
+        messagingSenderId: "651491529133"
+    };
+    this.AutoRegist = true;
+
+    this.init = function () {
+
+        yNF_Class.loadJS("https://www.gstatic.com/firebasejs/5.8.3/firebase.js", function () {            
+            yNF_Class.loadJS("https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js", function () {
+                yNF_Class.loadJS("https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js", function () { });
+                yNF_Class.loadJS("https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js", function () {
+                    //console.log('init yam notification');
+                    firebase.initializeApp(config);
+                    messaging = firebase.messaging();
+
+                    if (yNF_Class.AutoRegist) {
+                        yNF_Class.getPermission();
+                    }
+                    else {                        
+                        yNF_Class.Regist();
+                        //console.log('Regist yam notification');
+                    }
+
+                    
+
+
+                    messaging.onMessage(function (payload) {                        
+                        if (Notification && Notification.permission !== "granted") {
+                            Notification.requestPermission(function (status) {
+                                if (Notification.permission !== status) {
+                                    Notification.permission = status;
+                                }
+                            });
+                        }
+
+                        if (Notification.permission === 'granted') {
+                            var options = {
+                                body: payload.data.body,
+                                icon: payload.data.icon,
+                                image: payload.data.image,
+                                badge: payload.data.badge,
+                                lang: payload.data.lang,
+
+                            }
+                            var n = new Notification(payload.data.title, options);
+
+                            n.onclick = function (event) {
+                                event.preventDefault();
+                                window.open(payload.data.link, '_blank');
+                            }
+                         
+                            setTimeout(n.close.bind(n), 3000);
+                        }
+                    });
+                });
+            });
+        });
+
+    }
+
+    this.getPermission = function () {
+        if (Notification) {            
+            if (Notification.permission === "granted") {                
+                yNF_Class.Regist();                
+            }
+            else if (Notification.permission !== 'denied') { /*default*/
+                Notification.requestPermission(function (permission) {                    
+                    if (permission === "granted") {
+                        yNF_Class.Regist();
+                    }
+                });
+            }
+
+            if (!checkCookie()) {
+                var img = new Image();
+                img.src = "//notification.yam.com/granted";
+            }
+        }
+    }
+
+    this.Regist = function () {        
+        messaging.getToken()
+                .then(function (currentToken) {
+                    if (currentToken) {
+                        RegistUserTokenToSelfServer(currentToken);
+                    }
+                    //console.log('currentToken');
+                    //console.log(currentToken);
+                })
+                .catch(function (err) {
+                    console.log("跟 Server 註冊失敗 原因:" + err);
+                });
+    }
+
+    this.loadJS = function (url, callback) {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        if (script.readyState) { 
+            script.onreadystatechange = function () {
+                if (script.readyState == "loaded" || script.readyState == "complete") {
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else { 
+            script.onload = callback;
+        }
+        script.src = url;
+        document.head.appendChild(script);
+    }
+
+    function RegistUserTokenToSelfServer(user_token) {
+        var img = new Image();
+        img.src = "//notification.yam.com/rut?t=" + user_token;
+    }
+    function checkCookie() {var user = getCookie("yamnfuser");if (user != "") {return true;}else {setCookie("yamnfuser", _uuid(), 365);return false;}}
+    function setCookie(cname, cvalue, exdays) {var d = new Date();d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));var expires = "expires=" + d.toGMTString();document.cookie = cname + "=" + cvalue + "; " + expires;}
+    function getCookie(cname) { var name = cname + "="; var ca = document.cookie.split(';'); for (var i = 0; i < ca.length; i++) { var c = ca[i].trim(); if (c.indexOf(name) == 0) return c.substring(name.length, c.length); } return ""; }
+    function _uuid() {return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) { var r = Math.random() * 16 | 0, v = c == 'x' ? r : r & 0x3 | 0x8; return v.toString(16); });}
+}

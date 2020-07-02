@@ -1,0 +1,47 @@
+$(document).ready(function () {
+  var $searchBoxTabButton1 = $('#searchBox > .tabsNav a:nth-of-type(1)');
+  var $searchBoxTabButton2 = $('#searchBox > .tabsNav a:nth-of-type(2)');
+  var $searchBoxTabButton3 = $('#searchBox > .tabsNav a:nth-of-type(3)');
+  var $searchBoxTabButton4 = $('#searchBox > .tabsNav a:nth-of-type(4)');
+  var $categoryBox = $('#searchBox > div:nth-of-type(3) a');
+  var $locationBox = $('#searchBox > div:nth-of-type(4) a');
+
+
+  $searchBoxTabButton1.on('click', function (eventObject) {
+    eventObject.preventDefault();
+
+    ga('send', 'event', '搜尋文章', '搜尋文章_google', 'google');
+  });
+
+  $searchBoxTabButton2.on('click', function (eventObject) {
+    eventObject.preventDefault();
+
+    ga('send', 'event', '搜尋文章', '搜尋文章_分類', '分類');
+  });
+
+  $searchBoxTabButton3.on('click', function (eventObject) {
+    eventObject.preventDefault();
+
+    ga('send', 'event', '搜尋文章', '搜尋文章_地點', '地點');
+  });
+
+  $searchBoxTabButton4.on('click', function (eventObject) {
+    eventObject.preventDefault();
+
+    ga('send', 'event', '搜尋文章', '搜尋文章_時間', '時間');
+  });
+
+  $categoryBox.on('click', function (eventObject) {
+    eventObject.preventDefault();
+
+    ga('send', 'event', '搜尋文章', '搜尋文章_分類', $(this).text());
+    window.location.href = $(this).attr('href');
+  });
+
+  $locationBox.on('click', function (eventObject) {
+    eventObject.preventDefault();
+
+    ga('send', 'event', '搜尋文章', '搜尋文章_地點', $(this).text());
+    window.location.href = $(this).attr('href');
+  });
+});

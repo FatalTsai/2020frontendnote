@@ -1,0 +1,158 @@
+            var amo_Xu8siwAAAX2kSA9J = new Object(); //Creating the master object.
+        amo_Xu8siwAAAX2kSA9J.ad = [{gid:"US31948612",catalog:"MICROSOFTSTORE",id:"US31948612",category_id:"GLASSVIEW.TUMRI_403359",display_category_name:"",price:"0.00",discount_price:"0.00",brand:"",merchant_id:"-2069",merchantlogo:"",ship_promo:"",provider:"MICROSOFTSTORE",name:"Office Commercial purchase Signup Abandonment|TW|ZH",description:"",rank:"0.0",thumbnailraw:"",product_url:"https://www.microsoft.com/zh-tw/microsoft-365/business/new-business-software-suites?OCID=AID${TC_1}_OLA_${TC_2}_${TC_3}_${TC_4}",picture_url:"|001|001|rescaled-images/MICROSOFTSTORE/current/e51232cf9fc8dd7b4756cbe34f3be9cc.png",image_width:"001",image_height:"001",cpc:"0.0",c_code:"",discount_price_currency:"",blackwhiteliststatus:"0 ",offer_type:"PRODUCT",cpo:"0.0",baseproductnumber:"US31948612",country:"TW",state:"",city:"",zip:"",dmacode:"",areacode:"",advertiser_category_id:"GLASSVIEW.2304280",display_advertiser_category_name:"FY20Q4_SMB_M365_Achieve_SmartBusiness|O365_FY20Q4_SMB_Taiwan_300x250_BAN_AllUp_AI_Mandarin_Chinese_NA_NA_SBAN_BN_NA_1.jpg",globalid:"300x250",age:"",gender:"",hhi:"",ms:"",bt:"9041434",passthroughfield1:"",passthroughfield2:"",passthroughfield3:"",passthroughfield4:"",passthroughfield5:"",ut1:"7041434",ut2:"",ut3:"",ut4:"",ut5:"",x2_f1:"7041434",x2_f2:"",x2_f3:"",x2_f4:"",x2_f5:"",image_url1:"|000|000|source-images/MICROSOFTSTORE/current/c72c7adc6c1e1029109a852e443bbf6e.jpeg",image_url2:"",image_url3:"",image_url4:"",image_url5:"",slot_id:"0"}];
+        amo_Xu8siwAAAX2kSA9J.camAttribs={"clickUrl":"!{product_url}","productImage":"!{image_url1}","clickTracker":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABBJREFUeNpi+P//PwNAgAEACPwC/tuiTRYAAAAASUVORK5CYII=","impressionTracker":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABBJREFUeNpi+P//PwNAgAEACPwC/tuiTRYAAAAASUVORK5CYII=","backgroundImage":"https://dco-assets.everestads.net/ics-campaign//5031/c/3773/1x1_1.png"};
+        amo_Xu8siwAAAX2kSA9J.contentBase = "https://dco-assets.everestads.net/iCornerStore/";
+        amo_Xu8siwAAAX2kSA9J.baseParams = {"AdType":"mediumrectangle","RecipeID":"114190295498752","CampaignID":"3773","AdPodID":"46608","LocationID":"116142","AdvertiserID":"4249","AdvertiserName":"MICROSOFTSTORE","ExperienceID":"26587","ExternalBuyID":"23953020","ExternalPageID":"270015275","ExternalAdID":"464984657","ExternalCreativeID":"110112483","ExternalSiteID":"3654125","CA1":"0","CA3":"0","CA2":"0","CA5":"0","CA4":"0","DG3":"Taipei","DG5":"TW","T1":"270015275","F1":"270015275","bt":"12533151,19129735,12255374,18895701,12260220,18895705,12728009,17560119","ut1":"9WZDNCRFJ2G6-0010","ut2":"zh","ut3":"tw","pxid":"20114","TimeZone":"US/Eastern","UserBucket":"31","TumriMiniTag":"15930","ISN":"Xu8siwAAAX2kSA9J","UserId":"XafLVgAAEu9BxjzJ","PublisherURL":"https://beb98f1aa5cbb6f877697c6eefdb15eb.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html",};
+        amo_Xu8siwAAAX2kSA9J.atsParams = {"ClickTrackerUrl":"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstTEMIt9qUXzfFg076GAHNQ-fhj31TM4K1ZtN15IWV35IearpKDYSQD_JvPONV8yPxDdc_P_j8z6czZ0rTmXSJvvOxY3ILqlWgPwvaURfOnDw1fhqJV8KctbxCSwDL9Jw&sai=AMfl-YTB3y7tLHuOrajhAk-8k8cj24SyCQAjMLtdnrKhn_xF5XRUcNWbR7ms6WfmGh1_5fBbRR3BEt3YW8nn0J5KPdWYEJl7qtR7GrMT_pwlcxYC&sig=Cg0ArKJSzAGzrgzbJgUQEAE&urlfix=1&adurl=https://sin3-ib.adnxs.com/click%3FRTEbmz5T-D9Ei2zn-6n1PwAAAMDMzPw_keHKPGZe_j-x4emVsgwBQG8dlp3SZ9pc6OyCDsXHZjihK-9eAAAAAF-JHwC1AAAAnCgAAAIAAAAY7dAM0WMAAAAAAABVU0QAVVNEACwB-gDxdAAAAAABAgUCAAAAAMoArilPagAAAAA./bcr%3DAAAAAAAA8D8%3D/cnd%3D%2521jBcYTQiWueMREJjaw2YY0ccBIAAoADHaG3xhMlWwPzoJU0lOMzo0ODMzQNAiSQAAAAAAAPA_UQAAAAAAAAAAWQAAAAAAAAAAYZqZmZmZmbk_aQAAAAAAAAAAcQAAAAAAwCFAeAA./cca%3DMTAzOTYjU0lOMzo0ODMz/bn%3D89109/clickenc%3Dhttps%253A%252F%252Fadclick.g.doubleclick.net%252Faclk%253Fsa%253DL%2526ai%253DCpWVOnyvvXs6ZFpi22gSC1pf4As3Y179cj6S2k5MKwI23ARABIABgnwGCARdjYS1wdWItNTc4MTUzMTIwNzUwOTIzMsgBCeACAKgDAaoE8QFP0FnIEo6OAJsiJLYUnjtI2BxInVmivXSBUjkFVHpi08xlN-OkXrEaWf9x2ATIvsSWFqqDF-iiGGIXq6UvAvcF8SL5dEWooCSrrs58aGQFTBB--fdnqsauI6B66GP-SOpe5O6dJRPoUm4CjfBIqs9QGsQF9onh_m6gx7I8Va9iExP-WH8JzXXhv-Axic79ZMWtNd-jM2pDQ4cZniYkjaTPOyjy3xNBgs3Zq4LGP6GiWp9XX1DpY18b2ccmmHhFyN145F4tUcJTXzQdZm32VHv9-HUNcKR0ZiysBkI9Upxezra6U6lA4jwqx_oy3DGTLKBn4AQBgAazioP11tmD6vsBoAYhiAcBkAcCqAemvhuoB_DZG6gH8tkbqAfs1RuoB5bYG6gHwtob2AcA0ggCEALyCBthZHgtc3Vic3luLTY2Njc3ODQ0OTM4MjY5MjT6CwIIAYAMAQ%2526num%253D1%2526cid%253DCAMSeQClSFh3Er_dP_kHQ7pE0X5fggjqgpQJGfuBjDLtgI0EGSIQMZfkvBDVLzLCvJjeVfPcVENJ8MtssvBnCl2MaJWDmsyjmxEu5DWjbVNcePQ2DQhR6nP6X_kFPKSQkYkCBZ5gfx0unuyL1_YIXdbcg3gmEloUKJJF_O4%2526sig%253DAOD64_3QcyuYanLYA7J9BnoNE_WzKGFvUA%2526client%253Dca-pub-5781531207509232%2526adurl%253D^(lp_url)","Provider":"MICROSOFTSTORE","MerchantID":"MICROSOFTSTORE","x2_tracking_code_1":"2000139","x2_tracking_code_2":"23953020","x2_tracking_code_3":"270015275","x2_tracking_code_4":"110112483","x2_tracking_code_5":"dcmadvertiserid|8404942$dcmcampaignid|23953020$dcmadid|464984657$dcmrenderingid|109999360$dcmsiteid|3654125$dcmplacementid|270015275$customer|Microsoft$dv360auctionid|ct=TW",};
+        amo_Xu8siwAAAX2kSA9J.alsParams = {};
+        amo_Xu8siwAAAX2kSA9J.clickTags = {};
+        amo_Xu8siwAAAX2kSA9J.bannerAdHtmlText = '<a target="_blank" href="https://ats.everesttech.net:443/ats/ats?cmd=CLICK_THRU&ISN=Xu8siwAAAX2kSA9J&ProductURL=https%3A%2F%2Fproducts.office.com%2Fcompare-all-microsoft-office-products-b%3Ftab%3D1%C2%A0&Provider=4249&MerchantID=MICROSOFTSTORE&AdPosition=0&ClickType=Banner&"><img id="bannerImg" border="0" src="https://dco-assets.everestads.net/ics-campaign//5031/c/3773/b/mediumrectangle/2/O365_CreateYourBestWork_USA_300x250_BAN_Excel_Ease_NA_NA_ANI_BN_T1_2_f1.png"></img></a>';
+        amo_Xu8siwAAAX2kSA9J.pxid = '20114';
+        amo_Xu8siwAAAX2kSA9J.ut1 = '9WZDNCRFJ2G6-0010';
+        amo_Xu8siwAAAX2kSA9J.ut2 = 'zh';
+        amo_Xu8siwAAAX2kSA9J.ut3 = 'tw';
+        amo_Xu8siwAAAX2kSA9J.ut4 = '';
+        amo_Xu8siwAAAX2kSA9J.ut5 = '';
+        amo_Xu8siwAAAX2kSA9J.clickBeaconArr = [];
+        amo_Xu8siwAAAX2kSA9J.alsLoggerBasePath = "https://ats.everesttech.net:443/als/als";
+        amo_Xu8siwAAAX2kSA9J.atsLoggerBasePath = "https://ats.everesttech.net:443/ats/ats";
+        amo_Xu8siwAAAX2kSA9J.engagementBeacon = "https://ats.everesttech.net:443/als/als";
+
+        function fireImpBeacon(p_url, paramsObject){
+                            	try{
+                            		if(p_url && p_url != "null" && p_url != "undefined"){
+                            			var timeStamp = new Date().getTime() + "";
+                            			var clickTime = paramsObject ? paramsObject.ClickTime: 0;
+                            			var beacon = p_url.replace("[timestamp]", timeStamp);
+                                        beacon = beacon.replace("^(SEC)", clickTime/1000);
+                            			var bImage = new Image();
+            							bImage.src = beacon;
+            						}
+            					}catch(e){
+
+            					}
+                            };
+
+        var impBeacons = ["https://analyticspixel.microsoft.com/aid/imp?dcoimpid=Xu8siwAAAX2kSA9J&$dcmadvertiserid|8404942$dcmcampaignid|23953020$dcmadid|464984657$dcmrenderingid|109999360$dcmsiteid|3654125$dcmplacementid|270015275$customer|Microsoft$dv360auctionid|ct=TW"];
+        for (var i = 0; i < impBeacons.length; i++) {
+          fireImpBeacon(impBeacons[i],null);
+        }
+
+
+
+    var adLoader = function(isn,adwidth,adheight,url,cdnHTML5Url) {
+
+    	var _isn = "";
+    	var _adwidth = 0;
+    	var _adheight = 0;
+    	var _url = "";
+    	var _cdnHtml5Url="";
+
+    	var adLoader = function() {
+    		_isn = isn;
+    		_adwidth = adwidth;
+    		_adheight = adheight;
+    		_url=url;
+    		_cdnHtml5Url=cdnHTML5Url;
+    	}();
+
+    	var receiveMessage = function(event) {
+                if (event.data == 'Xu8siwAAAX2kSA9J') {
+                    var iFrm = window.document.getElementById("x2_ad_x2_" + isn);
+                    var amoObj = {};
+                    amoObj["data"] = window['amo_Xu8siwAAAX2kSA9J']
+                    amoObj["mainHtmlFile"] = url;
+                    amoObj["isn"] = "Xu8siwAAAX2kSA9J";
+                    iFrm.contentWindow.postMessage(amoObj,"*");
+                }
+        }
+
+    	var createCDNIFrame = function() {
+                var frm = document.getElementById("x2_ad_x2_" + _isn);
+                if (!frm) {
+                    frm = document.createElement("IFRAME");
+                    frm.setAttribute("id","x2_ad_x2_" + _isn);
+                    frm.style="border:0;"
+                    frm.style.postion="relative";
+                    frm.style.top="0px";
+                    frm.style.left="0px";
+                    frm.style.width= _adwidth + "px";
+                    frm.style.height= _adheight + "px";
+                    frm.style.margin="0px";
+                    frm.setAttribute("scrolling","no");
+                    frm.setAttribute("frameborder","0");
+                    frm.style.margin = "0";
+                    var div=document.getElementById("x2_" + _isn);
+                    div.appendChild(frm);
+                    frm.src=_cdnHtml5Url + "?data=" + _isn;
+                }
+                return frm;
+            }
+
+    	this.loadAd = function() {
+    		window.addEventListener("message", receiveMessage, false);
+    		createCDNIFrame();
+    	}
+    };
+
+    var createiFrame_Xu8siwAAAX2kSA9J = function(id, styleString, parentDiv)
+    {
+        var newEle= document.createElement("iFrame");
+        newEle.setAttribute("id",id);
+        if(styleString && styleString != "" )
+        {
+            newEle.setAttribute("style", styleString);
+        }
+        if (parentDiv) {
+            parentDiv.appendChild(newEle);
+        }
+        return newEle;
+    }
+
+    var createDiv_Xu8siwAAAX2kSA9J = function(id, styleString, parentDiv)
+    {
+        var newDiv= document.createElement("div");
+        newDiv.setAttribute("id",id);
+        if(styleString && styleString != "" )
+        {
+            newDiv.setAttribute("style", styleString);
+        }
+        if (parentDiv) {
+            parentDiv.appendChild(newDiv);
+        }
+        return newDiv;
+    };
+
+    var insertDivs_Xu8siwAAAX2kSA9J  = function()
+    {
+        var parent= createDiv_Xu8siwAAAX2kSA9J("x2_Xu8siwAAAX2kSA9J", "height:250px;width:300px;margin:0 auto;");
+        if (document.currentScript) {
+            var pn = document.currentScript.parentNode;
+            var sbn = document.currentScript.nextSibling;
+            if (sbn) {
+                pn.insertBefore(parent,sbn);
+            } else {
+                pn.appendChild(parent);
+            }
+        } else {
+            document.body.appendChild(parent);
+        }
+        createDiv_Xu8siwAAAX2kSA9J("bannerHtml_Xu8siwAAAX2kSA9J", "margin:0 auto;" , parent);
+        var loggingDiv = createDiv_Xu8siwAAAX2kSA9J("amo_Xu8siwAAAX2kSA9J","" ,parent);
+        createiFrame_Xu8siwAAAX2kSA9J("clickFrame_Xu8siwAAAX2kSA9J","position: absolute; visibility: hidden; top: 0px; left: 0px; width: 1px; height: 1px;", loggingDiv);
+        createiFrame_Xu8siwAAAX2kSA9J("interactionFrame_Xu8siwAAAX2kSA9J","position: absolute; visibility: hidden; top: 0px; left: 0px; width: 1px; height: 1px;", loggingDiv);
+    };
+
+    if(document.readyState === "complete")
+    {
+    	insertDivs_Xu8siwAAAX2kSA9J();
+    } else {
+    document.write('<div id="x2_Xu8siwAAAX2kSA9J" style="height:250px;width:300px;margin:0 auto;"><div id="bannerHtml_Xu8siwAAAX2kSA9J" style="margin:0 auto;"></div><div id="amo_Xu8siwAAAX2kSA9J"><iframe id="clickFrame_Xu8siwAAAX2kSA9J" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: 1px; height: 1px;"></iframe></div></div>');
+    }
+
+    (new adLoader(
+    		"Xu8siwAAAX2kSA9J","300","250",
+    		"https://dco-assets.everestads.net/ics-campaign//5031/t/7542/3/index.html",
+    		"https://dco-assets.everestads.net/ics-campaign/static/dco/html5-ad-script_v4.html")
+    		).loadAd();
+
